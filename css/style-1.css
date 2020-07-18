@@ -1,0 +1,359 @@
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/PTSans/ptsans.woff") format("woff"),
+       url("../fonts/PTSans/ptsans.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PTSansBold";
+  src: url("../fonts/PTSans/ptsansbold.woff") format("woff"),
+       url("../fonts/PTSans/ptsansbold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.clearfix:after,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ie8 .clearfix {
+  overflow: hidden;
+}
+
+body {
+  margin: 0 10px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: PTSans, Arial, sans-serif;
+  color: #1f2324;
+  background-color: #f7fdfe;
+}
+
+
+.container {
+  min-width: 768px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/************/
+/*  Header  */
+/************/
+
+.header {
+  position: relative;
+  margin-bottom: 38px;
+  padding-top: 0px;
+  padding-bottom: 0px;  
+  text-align:  center;
+  background-color: #015da3;
+  border-bottom: 2px solid #014e89;
+  border-radius: 2px;
+}
+
+.header:after,
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 10px;
+  background: url("../img/header-shadow-bottom.png") left bottom repeat-x;
+  opacity: 0.3;
+}
+
+.header-journal {
+  float: left;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  margin: auto;
+}
+
+.header-name {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  margin: auto;
+
+  background-color: #015da3;
+}
+
+.header p {
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+
+.journal-name {
+  font-size: 41px;
+  line-height: 60px;
+}
+
+.journal-slogan {
+  font-size: 31px;
+  line-height: 46px;
+}
+
+/************/
+/*  Main    */
+/************/
+
+.quotemath {
+  float: right;
+  margin-left: 46px;
+  margin-right: 45px;
+  margin-top: 10px;
+  line-height: 20px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  font-size: 15pt;
+  text-decoration: none;  
+  color: #b90a0a;
+}
+
+
+
+
+
+
+.quotemath-slogan {
+  margin-bottom: 5px;
+  line-height: 30px;
+}
+
+.quotemath-name {
+  float: right;
+  margin: 18px 0;
+  font-size: 13pt;
+  color: #ca5d5d;
+}
+
+.content .column {
+  width: 45%;
+}
+
+.content .column-title {
+  padding-left: 20px
+}
+
+.content .left-side {
+  float: left;
+}
+
+.content .right-side {
+  float: right;
+}
+
+.column-title {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 12px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #322b26;
+  background-color: #ccf0b2;
+  border-radius: 2px;
+}
+
+.column-title-onlytel {
+  display: none;
+}
+
+.column-list-onlytel {
+  display: none;
+}
+
+.column-list ul {
+  position: relative;
+  margin: 0;
+  padding-left: 17px;
+  list-style: none;
+}
+
+.list-item a {
+  position: relative;
+  display: inline-block;
+  padding: 0 3px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: PTSans, Arial, sans-serif;
+  color: #501864;
+}
+
+.list-item a:hover {
+  color: #0696ce;
+  text-decoration: none;
+}
+
+.list-item a:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #015da3;
+  border-radius: 2px;  
+}
+
+.pricol {
+  text-align: center;
+
+}
+
+.pricolimg {
+  display: inline-block;
+
+}
+
+
+@media screen and (max-width: 1240px) {
+  .container {
+    min-width: 400px;
+  }
+
+  .header {  
+    margin-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;  
+    border-bottom: 2px solid #014e89;
+    border-radius: 2px;
+  }
+
+  .journal-name {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .journal-slogan {
+    font-size: 21px;
+    line-height: 32px;
+  }
+
+
+  .quotemath {
+  
+    margin-left: 46px;
+    margin-right: 45px;
+    margin-top: 10px;
+    line-height: 20px;
+  
+    font-size: 13pt;
+}
+
+
+.quotemath-slogan {
+  margin-bottom: 5px;
+  line-height: 25px;
+}
+
+  .quotemath-name {
+    margin: 4px 0 8px 0;
+    font-size: 12pt;
+  }
+
+  .list-item {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+
+  .container {
+    min-width: 200px;
+  }
+
+  .header {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 3px;
+  }
+
+  .header p {
+    margin-bottom: 0px;
+  }
+
+   
+
+  .journal-name {
+    font-size: 25px;
+    line-height: 36px;
+  }
+
+  .journal-slogan {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .quotemath {
+    margin-top: 0px;
+  }
+
+  .quotemath-slogan {
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .quotemath-name {
+    margin: 7px 0 10px 0;
+    font-size: 11pt;    
+  }
+
+
+}
+
+
+@media screen and (max-width: 425px) {
+  .quotemath {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .quotemath-slogan {
+    display: inline-block;
+  }
+
+  .quotemath-name {
+    float: none;
+    margin: 1px 0 10px 0;
+    font-size: 10pt;
+  }
+
+  .column-title-onlytel {
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #322b26;
+    background-color: #ccf0b2;
+    border-radius: 2px;
+  }
+
+  .column-title {
+    display: none;
+  }
+
+  .column-list {
+    display: none;
+  }
+
+  .column-list-onlytel {
+    display: block;
+  }
+
+  .column-list-onlytel ul {
+    position: relative;
+    margin: 0;
+    padding-left: 9px;
+    list-style: none;
+  }
+
+}
